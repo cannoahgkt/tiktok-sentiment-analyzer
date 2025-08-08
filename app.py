@@ -1,4 +1,4 @@
-# TikTok Sentiment Analyzer - Clean & Simple
+# TikTok Sentiment Analyzer
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -20,13 +20,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Clean CSS - minimal and let Streamlit handle themes naturally
 SIMPLE_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
 
 html, body, [class*="css"] {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Manrope', sans-serif !important;
 }
 
 /* Just basic styling, let Streamlit handle dark mode */
