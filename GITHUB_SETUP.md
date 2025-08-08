@@ -22,29 +22,60 @@ git push -u origin main
 
 Replace `YOUR_USERNAME` with your actual GitHub username.
 
-### Step 3: Deploy to Vercel
-1. Go to https://vercel.com/
-2. Sign in with GitHub
-3. Click "New Project"
-4. Import your `tiktok-sentiment-analyzer` repository
-5. Set Framework Preset to "Other"
-6. Configure build settings:
-   - Build Command: `pip install -r requirements.txt`
-   - Output Directory: Leave empty
-   - Install Command: `pip install -r requirements.txt`
-   - Start Command: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
+# GitHub Repository Setup Instructions
 
-### Step 4: Environment Variables in Vercel
-Add these environment variables in Vercel dashboard:
-- `STREAMLIT_BROWSER_GATHER_USAGE_STATS` = `false`
-- `STREAMLIT_SERVER_ENABLE_CORS` = `false`
-- `STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION` = `false`
+## 🚀 Quick Setup Guide
 
-## 🎯 Alternative: Streamlit Cloud (Recommended)
+### Step 1: Create GitHub Repository
+1. Go to https://github.com/new
+2. Repository name: `tiktok-sentiment-analyzer`
+3. Description: `Real-time TikTok sentiment analysis with Python, Streamlit, and NLP`
+4. Make it **Public** (required for Streamlit Cloud free tier)
+5. **Don't** initialize with README (we already have one)
+6. Click "Create repository"
+
+### Step 2: Link Local Repository to GitHub
+Copy and paste these commands in your terminal:
+
+```bash
+cd "d:\Alter PC - D\stuff\coding\tiktok-sentiment-analyzer"
+git remote add origin https://github.com/YOUR_USERNAME/tiktok-sentiment-analyzer.git
+git branch -M main
+git push -u origin main
+```
+
+Replace `YOUR_USERNAME` with your actual GitHub username.
+
+### Step 3: Deploy to Streamlit Cloud (FREE & EASY!)
 1. Go to https://share.streamlit.io/
-2. Connect your GitHub account
-3. Deploy your `tiktok-sentiment-analyzer` repository
-4. The app will be live at: `https://your-username-tiktok-sentiment-analyzer-app-123456.streamlit.app/`
+2. Click "Sign up" and sign in with your GitHub account
+3. Click "New app"
+4. Select your repository: `YOUR_USERNAME/tiktok-sentiment-analyzer`
+5. Main file path: `app.py` (should auto-detect)
+6. Click "Deploy!"
+
+### ✨ Your app will be live at:
+`https://YOUR_USERNAME-tiktok-sentiment-analyzer-app-ABC123.streamlit.app/`
+
+## 🎯 Streamlit Cloud Features
+- ✅ **100% FREE** for public repositories
+- ✅ **Auto-deploys** on every GitHub push
+- ✅ **Professional URLs** - perfect for portfolios
+- ✅ **Built for Streamlit** - handles all dependencies
+- ✅ **No configuration needed** - just works!
+- ✅ **SSL certificates** included
+- ✅ **Global CDN** for fast loading
+
+## 🔄 Auto-Deployment
+Every time you push changes to GitHub, your Streamlit Cloud app automatically updates!
+
+```bash
+# Make changes to your code
+git add .
+git commit -m "Update features"
+git push
+# Your live app updates automatically! 🚀
+```
 
 ## 📝 Repository Details
 - **Name**: `tiktok-sentiment-analyzer`
@@ -53,7 +84,7 @@ Add these environment variables in Vercel dashboard:
 - **License**: MIT
 
 ## ✅ Your Repository is Ready!
-All files have been cleaned of personal/UK job market references and are ready for public deployment.
+All files have been cleaned and are ready for public deployment on Streamlit Cloud.
 
 ## 🚀 Live Demo Features
 - Real-time API simulation
@@ -63,3 +94,10 @@ All files have been cleaned of personal/UK job market references and are ready f
 - Production-quality code
 
 Perfect for showcasing your technical skills! 🎉
+
+## 📱 Streamlit Cloud Tips
+- Apps go to sleep after 7 days of inactivity (just visit to wake up)
+- Free tier has resource limits but perfect for demos
+- You get community support and hosting
+- Apps load fast with global CDN
+- Professional URLs for your portfolio
